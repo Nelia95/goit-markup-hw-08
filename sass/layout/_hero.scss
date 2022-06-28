@@ -1,0 +1,60 @@
+.hero {
+  max-width: 1600px;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bgr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  display: block;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
+}
+.hero-title {
+  color: #ffffff;
+  @include font(26px, 900, 1.62, 0.06em);
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 360px;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 1200px) {
+    @include font(44px, 900, 1.36, 0.06em);
+    max-width: 696px;
+  }
+}
+.hero-button {
+  display: flex;
+  @include font(16px, 700, 1.88, 0.06em);
+  justify-content: center;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

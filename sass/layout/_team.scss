@@ -1,0 +1,99 @@
+.team {
+  background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.team-title {
+  color: var(--title-text-color);
+  @include font(28px, 700, 1.18, null);
+  text-align: center;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    @include font(36px, 700, 1.17, null);
+    margin-bottom: 50px;
+  }
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__item {
+    width: 100%;
+    // flex-basis: calc(100% / 4 - 30px);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+  &__img {
+    display: block;
+  }
+}
+
+.team-captain {
+  background-color: var(--primary-bg-color);
+  padding-top: 30px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__name {
+    color: var(--title-text-color);
+    @include font(16px, 500, 1.19, null);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__text {
+    @include font(16px, null, 1.19, null);
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+.team-captain-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  &__item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+  &__link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-bg-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--accent-color);
+    fill: rgba(255, 255, 255, 1);
+  }
+  &__icon:hover,
+  &__icon:focus {
+    fill: rgba(255, 255, 255, 1);
+  }
+}
