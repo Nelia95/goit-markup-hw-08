@@ -36,6 +36,12 @@
     margin-right: 0;
   }
 }
+.footer-wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .footer-item > .link {
   font-style: normal;
   @include font(14px, null, 1.71, null);
@@ -71,8 +77,7 @@
 .ft {
   display: block;
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
   }
   @media screen and (min-width: 1200px) {
     display: flex;

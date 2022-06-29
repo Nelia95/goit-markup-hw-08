@@ -912,6 +912,13 @@ nav {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .footer-item > .link {
   font-style: normal;
   font-size: 14px;
@@ -961,8 +968,7 @@ nav {
 }
 @media screen and (min-width: 768px) {
   .ft {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
