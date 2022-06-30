@@ -100,6 +100,10 @@
   padding-left: 24px;
   padding-right: 24px;
   border: 1px solid #eeeeee;
+
+  &:first-child {
+    flex-grow: 1;
+  }
   &__name {
     color: var(--title-text-color);
     @include font(18px, 700, 2, 0.06em);
@@ -114,6 +118,10 @@
 .work-container {
   position: relative;
   overflow: hidden;
+  &__link {
+    display: flex;
+    flex-direction: column;
+  }
   &__text {
     background-color: rgba(33, 150, 243, 0.9);
     @include font(18px, null, 1.56, null);
@@ -133,5 +141,8 @@
   }
   &__img {
     display: block;
+  }
+  &__img:first-child {
+    height: 100%;
   }
 }

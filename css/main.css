@@ -32,6 +32,12 @@ ol {
   padding-left: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -358,7 +364,8 @@ nav {
 .hero {
   max-width: 1600px;
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgr.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgr-mob.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgr-mob-2x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -373,6 +380,8 @@ nav {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgr-tab.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgr-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -380,6 +389,8 @@ nav {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgr.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgr-2x.jpg);
   }
 }
 
@@ -461,13 +472,25 @@ nav {
 }
 
 .feature-container {
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .feature-container {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-container {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .feature-icon {
@@ -843,6 +866,9 @@ nav {
   padding-right: 24px;
   border: 1px solid #eeeeee;
 }
+.work-captain:first-child {
+  flex-grow: 1;
+}
 .work-captain__name {
   color: var(--title-text-color);
   font-size: 18px;
@@ -859,6 +885,10 @@ nav {
 .work-container {
   position: relative;
   overflow: hidden;
+}
+.work-container__link {
+  display: flex;
+  flex-direction: column;
 }
 .work-container__text {
   background-color: rgba(33, 150, 243, 0.9);
@@ -880,6 +910,9 @@ nav {
 }
 .work-container__img {
   display: block;
+}
+.work-container__img:first-child {
+  height: 100%;
 }
 
 .footer {
