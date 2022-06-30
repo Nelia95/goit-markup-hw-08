@@ -15,8 +15,8 @@
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -30,6 +30,14 @@
   padding-bottom: 40px;
   padding-left: 41px;
   padding-right: 39px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0) rotate(0);
   }
@@ -59,11 +67,14 @@
 }
 
 .modal-title {
-  @include font(20px, 700, 1.15, null);
+  @include font(20px, 700, 1.5, null);
   text-align: center;
   color: var(--title-text-color);
   justify-content: center;
   margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    @include font(20px, 700, 1.15, null);
+  }
 }
 .modal-label {
   display: block;
@@ -156,10 +167,16 @@
 } */
 .checkbox-label {
   display: flex;
+  flex-wrap: nowrap;
   position: relative;
-  @include font(14px, null, 1.71, null);
+  // width: 370px;
+  // height: 14px;
+  @include font(12px, null, 1.17, null);
   padding-left: 23px;
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    @include font(14px, null, 1.71, null);
+  }
 }
 .checkbox-link {
   display: inline-block;
