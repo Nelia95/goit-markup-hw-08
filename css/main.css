@@ -920,9 +920,6 @@ nav {
 .work-list__item:hover .work-container__text {
   transform: translateY(0);
 }
-.work-container__img {
-  display: block;
-}
 .work-container__img:first-child {
   height: 100%;
 }
@@ -1383,7 +1380,7 @@ nav {
 } */
 .checkbox-label {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   position: relative;
   font-size: 12px;
   line-height: 1.17;

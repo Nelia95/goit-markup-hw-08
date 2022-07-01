@@ -167,10 +167,8 @@
 } */
 .checkbox-label {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   position: relative;
-  // width: 370px;
-  // height: 14px;
   @include font(12px, null, 1.17, null);
   padding-left: 23px;
   margin-bottom: 30px;
