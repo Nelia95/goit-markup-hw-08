@@ -167,7 +167,7 @@
 } */
 .checkbox-label {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: nowrap;
   position: relative;
   @include font(12px, null, 1.17, null);
   padding-left: 23px;
@@ -179,7 +179,8 @@
 .checkbox-link {
   display: inline-block;
   color: #2196f3;
-  margin-left: 5px;
+  margin-left: 1px;
+  flex-shrink: 1;
 }
 
 .checkbox-icon {
@@ -189,7 +190,10 @@
   border: 2px solid rgba(33, 33, 33, 1);
   position: absolute;
   left: 0;
-  transform: translateY(25%);
+  @media screen and (min-width: 1200px) {
+    transform: translateY(25%);
+  }
+  transform: translateY(-5%);
   border-radius: 4px;
   .checkbox:checked + & {
     background-image: url(../images/check.svg);
