@@ -12,7 +12,7 @@
 .list-button {
   display: flex;
   flex-direction: row;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   // justify-content: center;
   flex-wrap: wrap;
   @media screen and (min-width: 768px) {
@@ -28,6 +28,9 @@
 .item-button {
   margin-right: 8px;
   margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
@@ -67,6 +70,7 @@
   gap: 30px;
   &__item {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
 
@@ -101,10 +105,11 @@
   padding-left: 24px;
   padding-right: 24px;
   border: 1px solid #eeeeee;
+  flex-grow: 1;
 
-  &:first-child {
-    flex-grow: 1;
-  }
+  // &:first-child {
+  //   flex-grow: 1;
+  // }
   &__name {
     color: var(--title-text-color);
     @include font(18px, 700, 2, 0.06em);

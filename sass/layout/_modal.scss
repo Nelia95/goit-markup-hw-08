@@ -170,7 +170,7 @@
   // flex-wrap: nowrap;
   position: relative;
   @include font(12px, null, 1.17, null);
-  padding-left: 23px;
+  padding-left: 20px;
   margin-bottom: 30px;
   @media screen and (min-width: 1200px) {
     @include font(14px, null, 1.71, null);
@@ -179,7 +179,7 @@
 .checkbox-link {
   display: inline-block;
   color: #2196f3;
-  margin-left: 1px;
+  margin-left: 2px;
   flex-shrink: 1;
 }
 

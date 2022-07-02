@@ -797,7 +797,7 @@ nav {
 .list-button {
   display: flex;
   flex-direction: row;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
@@ -816,6 +816,11 @@ nav {
 .item-button {
   margin-right: 8px;
   margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .item-button {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .item-button {
@@ -859,6 +864,7 @@ nav {
 }
 .work-list__item {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   transition-property: box-shadow;
@@ -885,8 +891,6 @@ nav {
   padding-left: 24px;
   padding-right: 24px;
   border: 1px solid #eeeeee;
-}
-.work-captain:first-child {
   flex-grow: 1;
 }
 .work-captain__name {
@@ -1398,7 +1402,7 @@ nav {
   position: relative;
   font-size: 12px;
   line-height: 1.17;
-  padding-left: 23px;
+  padding-left: 20px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
@@ -1411,7 +1415,7 @@ nav {
 .checkbox-link {
   display: inline-block;
   color: #2196f3;
-  margin-left: 1px;
+  margin-left: 2px;
   flex-shrink: 1;
 }
 
